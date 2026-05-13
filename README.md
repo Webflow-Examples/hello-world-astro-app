@@ -7,6 +7,8 @@ This is the vanilla variant — the exact output of `npm create astro@latest`, s
 > Looking for the variant with Cloudflare bindings (D1, R2, KV)?
 > See [`hello-world-astro-app-bindings`](https://github.com/Webflow-Examples/hello-world-astro-app-bindings).
 
+[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro-app)
+
 ## Quickstart
 
 ```bash

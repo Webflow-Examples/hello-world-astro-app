@@ -3,7 +3,7 @@
 // Runtime types generated with workerd@1.20260415.1 2025-04-15 nodejs_compat
 declare namespace Cloudflare {
 	interface Env {
-		SESSIONS: KVNamespace;
+		SESSION: KVNamespace;
 		FLAGS: KVNamespace;
 		MEDIA: R2Bucket;
 		DB: D1Database;

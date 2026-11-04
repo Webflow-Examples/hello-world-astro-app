@@ -1,16 +1,16 @@
-# hello-world-astro7-app-bindings
+# hello-world-astro-app
 
 An **Astro 7** starter for [**Webflow Cloud**](https://webflow.com/cloud) with Cloudflare bindings (D1, R2, KV) wired in.
 
 At deploy time, Webflow Cloud provisions the configured services and injects them into your app as typed bindings — no API keys, no connection strings.
 
 > Looking for the plain vanilla variant (no bindings)?
-> See [`hello-world-astro7-app`](https://github.com/Webflow-Examples/hello-world-astro7-app).
+> See [`hello-world-astro-app@v7`](https://github.com/Webflow-Examples/hello-world-astro-app/tree/v7).
 
-[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro7-app-bindings)
+[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro-app/tree/v7-with-bindings)
 
 > **Sentry / observability example:** the
-> [`feat/sentry-integration-example`](https://github.com/Webflow-Examples/hello-world-astro7-app-bindings/tree/feat/sentry-integration-example)
+> [`sentry`](https://github.com/Webflow-Examples/hello-world-astro-app/tree/sentry)
 > branch adds a working Sentry setup — browser + server logs on every request,
 > error capture, and a recurring ping endpoint — validated on the Cloudflare
 > Workers runtime Webflow Cloud uses. See its README for setup.

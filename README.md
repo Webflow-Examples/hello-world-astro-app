@@ -1,13 +1,13 @@
-# hello-world-astro6-app-bindings
+# hello-world-astro-app
 
 An **Astro 6** starter for [**Webflow Cloud**](https://webflow.com/cloud) with Cloudflare bindings (D1, R2, KV) wired in.
 
 At deploy time, Webflow Cloud provisions the configured services and injects them into your app as typed bindings — no API keys, no connection strings.
 
 > Looking for the plain vanilla variant (no bindings)?
-> See [`hello-world-astro6-app`](https://github.com/Webflow-Examples/hello-world-astro6-app).
+> See [`hello-world-astro-app@v6`](https://github.com/Webflow-Examples/hello-world-astro-app/tree/v6).
 
-[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro6-app-bindings)
+[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro-app/tree/sentry)
 
 ## Requirements
 

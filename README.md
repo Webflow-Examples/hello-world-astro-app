@@ -5,7 +5,7 @@ A minimal **Astro 5** starter deployed on [**Webflow Cloud**](https://webflow.co
 This is the vanilla variant — the exact output of `npm create astro@latest`, styled with a branded landing page and a few doc links to get you going.
 
 > Looking for the variant with Cloudflare bindings (D1, R2, KV)?
-> See [`hello-world-astro-app-bindings`](https://github.com/Webflow-Examples/hello-world-astro-app-bindings).
+> See [`hello-world-astro-app@v5-with-bindings`](https://github.com/Webflow-Examples/hello-world-astro-app/tree/v5-with-bindings).
 
 [![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro-app)
 

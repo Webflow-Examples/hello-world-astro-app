@@ -1,4 +1,4 @@
-# CONTEXT — hello-world-astro-app-bindings
+# CONTEXT — hello-world-astro-app
 
 Orientation for contributors to this **Astro 5 + bindings** Hello World example
 for [Webflow Cloud](https://developers.webflow.com/webflow-cloud). Keep this

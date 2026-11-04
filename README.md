@@ -1,13 +1,13 @@
-# hello-world-astro6-app
+# hello-world-astro-app
 
 A minimal **Astro 6** starter deployed on [**Webflow Cloud**](https://webflow.com/cloud).
 
 This is the vanilla variant — styled with a branded landing page and a few doc links. Uses Tailwind v4 via the Vite plugin.
 
 > Looking for the variant with Cloudflare bindings (D1, R2, KV)?
-> See [`hello-world-astro6-app-bindings`](https://github.com/Webflow-Examples/hello-world-astro6-app-bindings).
+> See [`hello-world-astro-app@v6-with-bindings`](https://github.com/Webflow-Examples/hello-world-astro-app/tree/v6-with-bindings).
 
-[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro6-app)
+[![Deploy to Webflow](https://webflow.com/img/deploy-dark.svg)](https://webflow.com/dashboard/cloud/deploy?repo=https://github.com/Webflow-Examples/hello-world-astro-app/tree/v6)
 
 ## Requirements
 

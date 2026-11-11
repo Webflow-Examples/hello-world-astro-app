@@ -1,0 +1,66 @@
+---
+// Code-splitting regression page for the Webflow Cloud build and deploy.
+//
+// Rendered on demand (not prerendered), so it runs in the deployed worker.
+// It loads one module with a dynamic import() on the server and one in the
+// browser, so the build emits extra server and client chunks. The
+// framework-regression harness checks that both chunks are built, shipped,
+// and served: the server marker must be in the HTML, and the client chunk
+// that holds the client marker must load from /_astro/.
+import Layout from '../layouts/Layout.astro';
+import WebflowLogo from '../components/WebflowLogo.astro';
+import '../styles/global.css';
+
+export const prerender = false;
+
+const FRAMEWORK = 'Astro 6';
+
+const { serverLazyMarker } = await import('../lib/chunk-test/server-lazy');
+---
+
+<Layout title={`Chunk test · Webflow Cloud (${FRAMEWORK})`}>
+  <div class="wf-page">
+    <div class="wf-glow" aria-hidden="true"></div>
+
+    <header class="wf-header">
+      <div class="wf-brand">
+        <WebflowLogo />
+        <span class="wf-brand-text">Webflow Cloud</span>
+      </div>
+      <nav class="wf-nav">
+        <a href="https://developers.webflow.com/webflow-cloud" target="_blank">Docs</a>
+        <a href="https://github.com/Webflow-Examples" target="_blank" class="wf-nav-ghost">GitHub</a>
+      </nav>
+    </header>
+
+    <main class="wf-main">
+      <section class="wf-hero">
+        <p class="wf-eyebrow">Code splitting · {FRAMEWORK}</p>
+        <h1 class="wf-title">
+          Lazy <span class="wf-gradient">chunks</span><br />
+          on Webflow Cloud.
+        </h1>
+        <p class="wf-subtitle">
+          Server chunk: <code data-chunk-test-server>{serverLazyMarker()}</code>
+        </p>
+        <p class="wf-subtitle">
+          Client chunk: <code data-chunk-test-client>loading…</code>
+        </p>
+      </section>
+    </main>
+
+    <footer class="wf-footer">
+      <span>
+        Built with {FRAMEWORK} · Deployed on
+        <a href="https://webflow.com/cloud" target="_blank">Webflow Cloud</a>
+      </span>
+    </footer>
+  </div>
+</Layout>
+
+<script>
+  const el = document.querySelector<HTMLElement>('[data-chunk-test-client]');
+  if (el) {
+    import('../lib/chunk-test/client-lazy').then(({ markClientLoaded }) => markClientLoaded(el));
+  }
+</script>
